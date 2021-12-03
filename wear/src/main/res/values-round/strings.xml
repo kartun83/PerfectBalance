@@ -1,3 +1,7 @@
 <resources>
-    <string name="hello_world">Hello Round World!</string>
+    <string name="hello_world">Press to start new routine</string>
+    <string name="left">←</string>
+    <string name="right">→</string>
+    <string name="up">↑</string>
+    <string name="down">↓</string>
 </resources>

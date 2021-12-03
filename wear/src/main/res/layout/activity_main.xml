@@ -14,11 +14,95 @@
         android:padding="@dimen/inner_frame_layout_padding"
         app:layout_boxedEdges="all">
 
-        <TextView
-            android:id="@+id/text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/hello_world" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/upField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/up"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <TextView
+                    android:id="@+id/leftField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/left"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/CenterField"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|center_vertical"
+                    android:layout_weight="2"
+                    android:clickable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:onClick="onToggleRoutine"
+                    android:text="@string/hello_world"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/rightField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/right"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/downField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/down"
+                    android:textAlignment="center"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+        </TableLayout>
 
     </FrameLayout>
 </androidx.wear.widget.BoxInsetLayout>
